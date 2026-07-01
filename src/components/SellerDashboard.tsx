@@ -22,8 +22,8 @@ export const SellerDashboard: React.FC<SellerDashboardProps> = ({
     ? orders 
     : orders.filter(o => o.status === filterStatus);
 
-  return (
-    <div className="flex-1 flex flex-col gap-6 animate-fade-in w-full max-w-7xl mx-auto">
+ return (
+    <div className="h-full flex flex-col gap-6 animate-fade-in w-full max-w-7xl mx-auto overflow-y-auto pr-1 pb-10">
       
       {/* Top Banner */}
       <div className="bg-slate-900 rounded-[32px] p-6 md:p-8 text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-xl">
